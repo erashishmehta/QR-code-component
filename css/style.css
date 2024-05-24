@@ -7,10 +7,17 @@
   color: hsl(228, 45%, 44%);
 }
 
+:root {
+  --clr-lightgray: hsl(212, 45%, 89%);
+  --clr-grayblue: hsl(220, 15%, 55%);
+  --clr-darkblue: hsl(218, 44%, 22%);
+}
+
 html {
   box-sizing: border-box;
   text-size-adjust: 100%;
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 html * {
@@ -18,8 +25,7 @@ html * {
 }
 
 body {
-  background-color: rgb(215, 224, 238);
-  /* background-color: rgb(31, 50, 81); */
+  background-color: var(--clr-lightgray);
   font-size: 15px;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
@@ -58,9 +64,13 @@ body {
 
 .card .content p {
   margin: 0;
+  color: var(--clr-grayblue);
+  font-size: 1rem;
 }
 
-.card .content .title {
+.card .content h1 {
   font-weight: 700;
   margin-bottom: 18px;
+  color: var(--clr-darkblue);
+  font-size: 1.18rem;
 }
